@@ -57,6 +57,23 @@ console.log(descById(users))
 // O problema maior é que: Se tiver letras maiusculas e minusculas busca as maiusculas
 // Para isso: 
 
+const sortWithLower = R.sortBy(R.compose(
+  R.toLower,
+  R.prop('name')
+))
+
+console.log(sortWithLower(users))
+
+/*
+[
+  { id: 3, name: 'Brunno' },
+  { id: 1, name: 'Daniel' },
+  { id: 2, name: 'Ramon' }
+]
+*/
+
+// Usando sortWith 
+
 const idName = R.sortWith([
   R.descend(R.prop('name')),
   R.ascend(R.prop('id'))
