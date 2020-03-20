@@ -23,4 +23,4 @@ getVideoFilePath = R.compose(
   ) 
 )
 
-console.log(getVideoFilePath(video))
+console.log(getVideoFilePath(video)) // /api/videos/video.mp4
