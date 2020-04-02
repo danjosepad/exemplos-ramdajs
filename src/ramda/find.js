@@ -10,6 +10,10 @@ const users = [
     name: 'Brunno'
   },
   {
+    id: 2,
+    name: 'Brunno'
+  },
+  {
     id: 3,
     name: 'Ramon'
   }

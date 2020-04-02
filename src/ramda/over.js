@@ -10,6 +10,9 @@ let nameLens = R.lens(
   R.assoc('name')
 )
 
+const test = R.assoc('test', R.map(R.prop('name')), user);
+  
+console.log(test);
 // Refatorando 
 
 nameLens = R.lensProp('name')
